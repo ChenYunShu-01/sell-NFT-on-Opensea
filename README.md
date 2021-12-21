@@ -1,6 +1,6 @@
 # sell-NFT-on-Opensea
 
-**在Opensea上铸造 ERC721 NFT**
+**1，在Opensea上铸造 ERC721 NFT**
 
 不同于ERC20，ERC721是非同质化代币，意味着ERC721代币每一个代币都是不同的，不能像ERC20代币一样进行等量或者等价的交换，ERC721代币应用于数字化的艺术作品，或者数字化的游戏装备。以下是在Opensea上铸造ERC721 NFT的步骤：
 1. 打开Remix IDE，创建sell-nft721.sol文件，复制ERC721-NFT.sol中的代码粘贴到文件，contract MyNFT继承自OpenZeppelin库的ERC721URIStorage，ERC721URIStorage继承自ERC721，增加了tokenURI方法以及重写了burn方法；
@@ -10,7 +10,7 @@
 5. Transaction confirmed之后就可以登陆到Opensea的测试网 testnets.opensea.io 查看自己的collections，你需要点击import an existing smart contract来查看发布的NFT，点击Sell可以为NFT定价销售；
 6. 用另外的tokenURI作为参数可以依序生成不同的NFT，发布之后登陆Opeansea后台都可以显示，如果不满意其中的某个NFT，可以把这个NFT的序号作为函数burn的参数，在Remix上点击burn，可以提交销毁NFT的请求，完成之后这个销毁的NFT就对外隐藏并且无法定价sell。
 
-**在Opensea上铸造 ERC1155 NFT**
+**2，在Opensea上铸造 ERC1155 NFT**
 
 ERC1155是ERC721的升级版，既能铸造同质化代币，也能铸造非同质化代币，是半同质化代币。主要应用于游戏装备，同样的装备只需要mint一次，这样可以节约链上存储空间，与链上交互代价会减小，节省gas费。不同于ERC20，ERC1155没有decimal属性，所以每一个ERC1155 Token都是不可分割的。
 以下是在Opensea上发行ERC1155 NFT的步骤：
