@@ -2,7 +2,7 @@
 
 **在Opensea上铸造 ERC721 NFT**
 
-不同于ERC20，ERC721是非同质化代币，意味着ERC721代币每一个代币都是不同的，不能想ERC20代币一样进行等量或者等价的交换，应用于数字化的艺术作品，或者数字化的游戏装备。以下是在Opensea上铸造ERC721 NFT的步骤：
+不同于ERC20，ERC721是非同质化代币，意味着ERC721代币每一个代币都是不同的，不能像ERC20代币一样进行等量或者等价的交换，ERC721代币应用于数字化的艺术作品，或者数字化的游戏装备。以下是在Opensea上铸造ERC721 NFT的步骤：
 1. 打开Remix IDE，创建sell-nft721.sol文件，复制ERC721-NFT.sol中的代码粘贴到文件，contract MyNFT继承自OpenZeppelin库的ERC721URIStorage，ERC721URIStorage继承自ERC721，增加了tokenURI方法以及重写了burn方法；
 2. 打开metamask并登录到Ethereum主网并deploy，Opensea也支持测试网Rinkeby，所以也可以通过metadata把合约deploy到Rinkeby；
 3. 把要发布的图片上传到ipfs，并获得ipfs到链接，也可以上传到其他服务器，当然最好是像ipfs这样的去中心化服务器上，然后生成json形式metadata，以这个json的地址作为tokenURI；
