@@ -20,3 +20,4 @@ ERC1155是ERC721的升级版，既能铸造同质化代币，也能铸造非同�
 4. 在Remix中把上面的到的tokenURI作为函数createNFTs的参数，点击createNFTs提交生成NFT的请求并通过metamask发送；
 5. Transaction confirmed之后就可以登陆到Opensea的测试网 testnets.opensea.io 查看自己的collections，可以看到contract下有5个item，你可以transfer你的token到其他地址，也可以定价sell。
 6. 因为ERC1155已经实现了burn的功能，所以也可以中remix中销毁掉某个token
+
